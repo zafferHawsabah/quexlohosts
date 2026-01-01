@@ -1,0 +1,12 @@
+{
+  "hosts": [
+    {
+      "name": "Demo",
+      "url": "https://demo.quexlo.com:8443"
+    },
+    {
+      "name": "Test",
+      "url": "http://192.168.37.7:8060"
+    }
+  ]
+}
