@@ -6,7 +6,11 @@
     },
     {
       "name": "Test",
-      "url": "http://192.168.37.7:8060"
+      "url": "http://192.168.37.7:5001"
+    },
+    {
+      "name": "KAAUH",
+      "url": "https://alertapi.kaauh.edu.sa"
     }
   ]
 }
