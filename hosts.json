@@ -11,6 +11,11 @@
     {
       "name": "KAAUH",
       "url": "https://alertapi.kaauh.edu.sa"
+    },
+    ,
+    {
+      "name": "JHAH",
+      "url": "https://ens1.jhah.com.sa"
     }
   ]
 }
