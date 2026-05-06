@@ -8,6 +8,10 @@
       "name": "Test",
       "url": "http://78.110.9.37:5001"
     },
+     {
+      "name": "Test2",
+      "url": "http://78.110.9.37:5002"
+    },
     {
       "name": "KAAUH",
       "url": "https://alertapi.kaauh.edu.sa"
