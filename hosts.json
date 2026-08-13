@@ -6,7 +6,7 @@
     },
     {
       "name": "Test",
-      "url": "http://78.110.9.37:5001"
+      "url": "https://test.quexlo.com:8443"
     },
      {
       "name": "Test2",
@@ -22,10 +22,6 @@
     },
     {
       "name": "SFHR",
-      "url": "http://173.212.221.83:5050"
-    },
-    {
-      "name": "SFHR2",
       "url": "https://demo.quexlo.com:2083"
     }
   ]
