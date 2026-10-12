@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Quexlo ECS</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f8f9fa;
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            padding: 32px 24px;
+            max-width: 400px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .brand-header {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #888;
+            margin-bottom: 24px;
+            font-weight: 600;
+        }
+        .app-icon {
+            width: 100px;
+            height: 100px;
+            border-radius: 22px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            margin-bottom: 16px;
+            object-fit: cover;
+            background-color: #fff;
+        }
+        h1 {
+            font-size: 1.6rem;
+            margin: 0 0 8px 0;
+            font-weight: 700;
+            color: #111;
+        }
+        p {
+            color: #666;
+            margin: 0 0 32px 0;
+            font-size: 0.95rem;
+            line-height: 1.4;
+        }
+        .store-buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+        }
+        .btn {
+            display: inline-block;
+            transition: transform 0.2s, opacity 0.2s;
+            height: 50px;
+        }
+        .btn:hover {
+            transform: scale(1.02);
+        }
+        .btn:active {
+            transform: scale(0.98);
+            opacity: 0.9;
+        }
+        .btn img {
+            height: 100%;
+            width: auto;
+            display: block;
+        }
+    </style>
+    <script>
+        (function () {
+            // Your exact Quexlo ECS store links
+			var iosUrl = "https://apps.apple.com/sa/app/quexlo-ecs/id6740324756?itscg=30200&itsct=apps_box_badge&mttnsubad=6740324756";
+            var androidUrl = "https://play.google.com/store/apps/details?id=com.hawsabah.quexlo";
+
+            var ua = navigator.userAgent || navigator.vendor || window.opera;
+
+            // Instantly auto-redirect mobile devices upon scanning
+            if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
+                window.location.replace(iosUrl);
+            } else if (/android/i.test(ua)) {
+                window.location.replace(androidUrl);
+            }
+            
+            // Populate fallback links for desktop browsers
+            window.addEventListener('DOMContentLoaded', function() {
+                document.getElementById('ios-link').href = iosUrl;
+                document.getElementById('android-link').href = androidUrl;
+            });
+        })();
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Hawsabah Branding -->
+        <div class="brand-header">Hawsabah</div>
+                
+        <h1>Download Quexlo ECS</h1>
+        <p>Please select your device's app store below to download the application.</p>
+        
+        <div class="store-buttons">
+            <!-- App Store Badge -->
+            <a id="ios-link" class="btn" href="#" target="_blank" rel="noopener">
+                <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/white/en-us?releaseDate=1759276800" alt="Download on the App Store">
+            </a>
+            
+            <!-- Google Play Badge -->
+            <a id="android-link" class="btn" href="#" target="_blank" rel="noopener">
+                <img alt="Get it on Google Play" 
+         src="https://appure.io/badges/playstore/en.svg" 
+         height="60" />				
+            </a> 		
+        </div>
+    </div>
+</body>
+</html>
